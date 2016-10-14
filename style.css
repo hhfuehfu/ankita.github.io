@@ -24,19 +24,29 @@ border:0;
 	}
 	.navbar-brand h1
 	{
-		font-family: 'Lora'serif;
-		color: #557c3e;
-		font-size: 1.5em;
-		text-transform: uppercase;
-		font-weight: bold;
-		text-shadow: 1px 1px 1px #222;
-		margin-top: 0;
+		 -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 10s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    10% {text-shadow: 10px 20px 30px green;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    10% {text-shadow: 10px 20px 30px green; font-size: 1.5em;color:#557c3e; font-weight: bold;
+    	font-family: 'Lora'serif;text-transform: uppercase;	margin-top: 0;
 		margin-bottom: 0;
-		line-height: .75;
+		line-height: .75;}
+		
+		
+		
+	
 }
 	.navbar-brand a:hover,.navbar-brand a:focus
 	{
-		text-decoration: none;
+		text-decoration: initial;
 	}
 	.navbar-brand
 	{
@@ -178,13 +188,19 @@ margin-bottom: 35px;
 						background-color: #000;
 						color:#fff;
 						opacity: .8;}
+						.text-center
+						{
+							color: #FFFFFF;
+						}
 .category-tile-hover
 {
 	box-shadow: 0 1px 5px 1px #cccccc;
+
 }
 
 #menu-category-title +div
 {margin-bottom: 50px;
+
 }
 .menu-item-tile
 {
@@ -197,7 +213,9 @@ margin-bottom: 25px;
 {font-size:1.1em; 
 text-align: right;
 margin-top: -15px;
-margin-right: -15px;}
+margin-right: -15px;
+color: #000000;
+font-weight: bold;}
 .menu-item-tile .menu-item-price span
 {
 	font-size: .6em;
@@ -219,12 +237,14 @@ right: 0;
 width: 80px;
 background-color: #557c3e;
 text-align:center;
-color: #FFFFFF}
+color: #FFFFFF
+}
 .menu-item-description
-{
+{color: #FFFFFF;
 	padding-right: 30px;}
 h3.menu-item-title
 {margin:  0 0 10px;
+		color: #FFFFFF;
 }
 .menu-item-details
 {
@@ -365,3 +385,4 @@ float: left;
 width: 100%;
 }
 						
+							
